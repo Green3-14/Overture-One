@@ -1,0 +1,6 @@
+{
+  "name": "Mini Browser",
+  "short_name": "MiniBrowser",
+  "start_url": "/",
+  "display": "standalone"
+}
