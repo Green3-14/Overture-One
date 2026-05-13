@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mini Browser</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="toolbar">
+    <div class="nav-left">
+      <button id="back" title="Back">◀</button>
+      <button id="forward" title="Forward">▶</button>
+      <button id="reload" title="Reload">⟳</button>
+      <button id="newtab" title="New Tab">＋</button>
+    </div>
+    <form id="omnibox-form">
+      <input id="omnibox" placeholder="Enter URL or search" autocomplete="off">
+      <button id="go" title="Go">Go</button>
+    </form>
+  </div>
+
+  <div id="tabs-bar"></div>
+
+  <div id="layout">
+    <aside id="sidebar">
+      <h3>Tabs</h3>
+      <ul id="sidebar-tabs"></ul>
+      <h3>History</h3>
+      <ul id="history-list"></ul>
+      <h3>Bookmarks</h3>
+      <ul id="bookmarks-list"></ul>
+    </aside>
+
+    <main id="mainview">
+      <div id="tab-views"></div>
+    </main>
+  </div>
+
+<script src="/app.js"></script>
+</body>
+</html>
