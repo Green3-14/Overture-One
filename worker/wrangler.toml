@@ -1,0 +1,12 @@
+name = "mini-browser-gateway"
+main = "index.js"
+compatibility_date = "2026-05-14"
+
+type = "javascript"
+
+# Bind a KV namespace named TAB_COOKIES_KV
+kv_namespaces = [
+  { binding = "TAB_COOKIES_KV", id = "REPLACE_WITH_YOUR_KV_ID" }
+]
+
+# Route setup is handled in Cloudflare dashboard or via wrangler publish with routes
